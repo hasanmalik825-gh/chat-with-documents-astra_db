@@ -16,7 +16,7 @@ async def query_document(
     documents = load_document(file)
     documents = split_document(documents)
     embeddings = embedder_by_huggingface()
-    vector_store = get_astra_db_vector_store(collection_name="astra_vector_langchain", embeddings=embeddings)
+    vector_store = get_astra_db_vector_store(collection_name="astra_vectordb_langchain", embeddings=embeddings)
     add_unique_documents(documents, vector_store)
     template = [
         ("system", "You are a helpful assistant that answers concisely. You are given the following context: {context}."),
