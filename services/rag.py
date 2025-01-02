@@ -5,7 +5,6 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.embeddings import Embeddings
 from langchain_astradb import AstraDBVectorStore
 from langchain_core.documents import Document
-from fastapi import UploadFile as FastAPIUploadFile
 from starlette.datastructures import UploadFile as FastAPIUploadFile
 from streamlit.runtime.uploaded_file_manager import UploadedFile as StreamlitUploadedFile
 import tempfile
